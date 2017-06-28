@@ -5,15 +5,71 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container">
-<h2>Survey Questions</h2>
-<hr>
-<h3><strong>About You</strong></h3>
-<h4>Name</h4>
-<input type="text" name id="name" class="form-control" required>
-<h4>Link to photo image</h4>
-<input type="text" name id="name" class="form-control" required>
-<hr>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3><strong>About You</strong></h3>
+        <h4>Name</h4>
+        <input type="text" name id="name" class="form-control" required>
+        <h4>Link to photo image</h4>
+        <input type="text" name id="name" class="form-control" required>
+        <hr>
+        <h3><strong>Question 1</strong></h3>
+        <h4>You work hard, but play harder</h4>
+        <select data-placeholder class='chosen-select' id='question1'>
+            <option value></option>
+            <option value='5'>5 (Strongly agree)</option>
+            <option value='4'>4 (agree)</option>
+            <option value='3'>3</option>
+            <option value='2'>2 (disagree)</option>
+            <option value='1'>1 (Strongly disagree)</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>Breaking Bad is the greatest show ever</h4>
+        <select data-placeholder class='chosen-select' id='question2'>
+            <option value></option>
+            <option value='5'>5 (Strongly agree)</option>
+            <option value='4'>4 (agree)</option>
+            <option value='3'>3</option>
+            <option value='2'>2 (disagree)</option>
+            <option value='1'>1 (Strongly disagree)</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>Dogs > Cats</h4>
+        <select data-placeholder class='chosen-select' id='question3'>
+            <option value></option>
+            <option value='5'>5 (Strongly agree)</option>
+            <option value='4'>4 (agree)</option>
+            <option value='3'>3</option>
+            <option value='2'>2 (disagree)</option>
+            <option value='1'>1 (Strongly disagree)</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>Dogs > people</h4>
+        <select data-placeholder class='chosen-select' id='question4'>
+            <option value></option>
+            <option value='5'>5 (Strongly agree)</option>
+            <option value='4'>4 (agree)</option>
+            <option value='3'>3</option>
+            <option value='2'>2 (disagree)</option>
+            <option value='1'>1 (Strongly disagree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>You are a people person</h4>
+        <select data-placeholder class='chosen-select' id='question5'>
+            <option value></option>
+            <option value='5'>5 (Strongly agree)</option>
+            <option value='4'>4 (agree)</option>
+            <option value='3'>3</option>
+            <option value='2'>2 (disagree)</option>
+            <option value='1'>1 (Strongly disagree)</option>
+        </select>
+        <hr>
+        <button type='submit' class='btn btn-primary btn-lg' id='submit'>
+            Submit
+        </button>
 </body>
+
 </html>
