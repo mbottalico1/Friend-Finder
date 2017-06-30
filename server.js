@@ -17,15 +17,16 @@ app.use(bodyParser.json({
     type: "application/vnd.api+json"
 }));
 
+app.use(express.static('app'));
 //HTML and API routes
-function routes(req,res) {
-app.use(require('./routing/apiRoutes.js'));
-app.use(require('./routing/htmlRoutes.js'));
+require('./routing/apiRoutes.js');
+require('./routing/htmlRoutes.js');
+
 
 //
 app.use(express.static(path.join(__dirname, './app/public')));
 
-}
-app.listen(function() {
-	console.log('App listening');
-})
+
+app.listen(port, function() {
+  console.log("App listening on port " + port);
+});
